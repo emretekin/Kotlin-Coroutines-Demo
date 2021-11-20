@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
     app:startDestination="@id/firstFragment">
 
@@ -13,9 +14,17 @@
             app:destination="@id/secondFragment"
             app:popUpTo="@id/firstFragment"
             app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_firstFragment_to_thirdFragment"
+            app:destination="@id/thirdFragment" />
     </fragment>
     <fragment
         android:id="@+id/secondFragment"
         android:name="com.emretekin.kotlincoroutinesdemo.fragments.SecondFragment"
         android:label="SecondFragment" />
+    <fragment
+        android:id="@+id/thirdFragment"
+        android:name="com.emretekin.kotlincoroutinesdemo.fragments.ThirdFragment"
+        android:label="fragment_third"
+        tools:layout="@layout/fragment_third" />
 </navigation>

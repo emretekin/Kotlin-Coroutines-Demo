@@ -6,10 +6,22 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="120dp"
         android:text="@string/first_fragment"
         android:textColor="@color/purple_500"
         android:textSize="32dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvScope"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="200dp"
+        android:text="Scope=-"
+        android:textColor="@color/purple_500"
+        android:textSize="24dp"
         android:textStyle="bold" />
 
     <LinearLayout
@@ -35,12 +47,31 @@
 
     </LinearLayout>
 
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btnGoSecondFrag"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="100dp"
-        android:text="Go to Second Fragment" />
+        android:orientation="vertical">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnGoSecondFrag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Go to Second Fragment" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnGoThirdFrag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Go to Third Fragment" />
+
+        <Button
+            android:id="@+id/cancelJob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Cancel Job Sample" />
+    </LinearLayout>
 </FrameLayout>
