@@ -62,7 +62,6 @@ class FirstFragment : Fragment() {
         }
     }
 
-
     private fun lifecyleScopeCorrection() {
         tvScope.text = "Scope= Lifecycle Scope"
         lifecycleScope.launch {
